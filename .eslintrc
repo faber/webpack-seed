@@ -1,0 +1,52 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "globals": {
+    "__APP_ENV__" : true,
+    "__DEV__" : true,
+    "__CORE_API_HOST__": true,
+    "__AUTH_API_HOST__": true,
+    "__REAL_API_METHODS__": true
+  },
+  "plugins" : [
+    "react"
+  ],
+  "rules": {
+    "no-underscore-dangle": 0,
+    "quotes": [1, "single", "avoid-escape"],
+    "no-use-before-define": [1, "nofunc"],
+    "new-cap": 0,
+
+    "react/display-name": 1,
+    "react/jsx-boolean-value": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-quotes": 1,
+    "react/jsx-sort-prop-types": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-multi-comp": 1,
+    "react/no-unknown-property": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": [1, {
+      "order" : [
+        "lifecycle",
+        "everything-else",
+        "render",
+        "/^render.+$/"
+      ]
+    }],
+    "react/wrap-multilines": 1
+  }
+}
